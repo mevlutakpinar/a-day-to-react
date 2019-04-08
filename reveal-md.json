@@ -1,0 +1,8 @@
+{
+  "template": "assets/template.html",
+  "theme": "assets/style/black.css",
+  "css": "assets/style/slide-theme.css",
+  "highlightTheme": "gruvbox-dark",
+  "separator": "\n---\n",
+  "verticalSeparator": "\n----\n"
+}

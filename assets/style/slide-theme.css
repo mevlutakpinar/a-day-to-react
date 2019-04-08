@@ -1,0 +1,248 @@
+/**
+ * Override theme for reveal.js default theme.
+ *
+ * By Burak KIRKIL
+ */
+
+/*********************************************
+ * BRANDING COLORS
+
+  GRAY    #6c6d70
+  RED     #be1d2c
+  BLACK   #231f20
+  BLUE    #0072bc
+
+  BLUE        #42affa   arrow color
+  ORANGE      #fb4934   code color
+  YELLOW      #fabd2f   code color
+  GRAY BLUE   #83a598   code color
+
+ *********************************************/
+
+ /*********************************************
+ * ANALOGOUS COLOR WHEEL COLORS
+
+  BLUE    #42AFFA
+  PURPLE  #720CE8
+  RED     #FF0000
+  ORANGE  #E88B0C
+  YELLOW  #FFFA0D
+
+  PINK    #FB5D5B
+
+  SHADES  #3182BA
+  SHADES  #20567A
+  SHADES  #42AFFA
+  SHADES  #3B9DE0
+  SHADES  #3182BA
+
+ *********************************************/
+
+/*********************************************
+ * GLOBALS
+ *********************************************/
+
+body {
+  background: url(../image/texture-1.jpg) no-repeat center center;
+}
+
+.reveal {
+  font-size: 36px;
+  /*font-style: italic;*/
+}
+
+.reveal blockquote {
+  font-size: 0.8em;
+  padding: 25px;
+}
+
+.reveal ul {
+  margin-left: 0;
+  list-style: none;
+}
+
+.reveal ul li:before {
+  position: absolute;
+  content: '●'; /* ♦ ▶ ▸ ¤ ø Θ θ • ● ο Ο */
+  margin: 10px 0 5px -20px;
+  color: #666;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.reveal .controls,
+.reveal .progress,
+.reveal .slide-menu-button a {
+  color: rgba(125, 125, 125, .5);
+}
+
+.reveal.has-dark-background .controls,
+.reveal.has-dark-background .progress,
+.reveal.has-dark-background .slide-menu-button a {
+  color: rgba(255, 255, 255, .5);
+}
+
+/*********************************************
+ * HELPERS
+ *********************************************/
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.footnote::before {
+  content: '* ';
+}
+
+.footnote {
+  font-style: italic !important;
+  font-size: .6em !important;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #fff;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.2;
+  text-transform: none;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+}
+
+.reveal h1 {
+  font-size: 2.5em;
+  letter-spacing: -4px;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reveal h2 {
+  letter-spacing: -2px;
+  font-size: 1.6em;
+}
+
+.reveal h3 {
+  color: #3498db;
+  letter-spacing: -1px;
+  font-size: 1.3em;
+}
+
+.reveal h4 {
+  color: #fb4934;
+  letter-spacing: -1px;
+  font-size: 1.2em;
+}
+
+/*********************************************
+ * CODE BLOCKS <!-- .slide class="code-xl" -->
+ *********************************************/
+
+.reveal pre code {
+  display: block;
+  padding: 10px;
+  overflow: auto;
+  max-height: 600px;
+  word-wrap: normal;
+  font-style: normal;
+}
+
+.code-xl pre {
+  font-size: 1em !important;
+}
+
+.code-l pre {
+  font-size: 0.65em !important;
+}
+
+.code-m pre {
+  font-size: 0.55em !important;
+}
+
+.code-s pre {
+  font-size: 0.45em !important;
+}
+
+/*********************************************
+ * IMAGES <!-- .slide class="image-s" -->
+ *********************************************/
+
+.reveal section img {
+  margin: 15px 0px;
+  /*background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.image-s img {
+  width: 20%;
+}
+
+.image-m img {
+  width: 50%;
+}
+
+.image-l img {
+  width: 70%;
+}
+
+.image-xl img {
+  width: 90%;
+}
+
+ /*********************************************
+ * BACKGROUNDS <!-- .slide data-state="fancy" -->
+ *********************************************/
+
+.fancy .reveal .backgrounds .slide-background.present {
+  background-image: linear-gradient(#3498db, #9b59b6);
+}
+
+.light .reveal .backgrounds .slide-background.present {
+  background: url('../image/light.jpg');
+  background-size: cover;
+}
+
+.white .reveal .backgrounds .slide-background.present {
+  background-color: #fff;
+}
+
+.texture .reveal .backgrounds .slide-background.present {
+  background: url('../image/texture-2.jpg');
+  background-size: cover;
+}
+
+.triangle .reveal .backgrounds .slide-background.present {
+  background: url('../image/triangle.jpg');
+  background-size: cover;
+}
+
+/*<!-- .slide: data-background="#0072bc" -->*/
+/*<!-- .slide: data-state="dark" -->*/
+
+/*.container{
+    display: flex; }
+
+.col{
+    flex: 1; }
+
+#logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px; }*/
+
+/*text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);*/
